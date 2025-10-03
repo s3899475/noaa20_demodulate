@@ -116,7 +116,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '[0x56, 0xe4, 0x5e, 0x57, 0xa6, 0x68, 0x75, 0x23]'
+    value: '[0x56, 0xe4, 0x5e, 0x57, 0xa6, 0x68, 0x75, 0x46]'
   states:
     bus_sink: false
     bus_source: false
@@ -133,7 +133,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 12.0]
+    coordinate: [928, 8.0]
     rotation: 0
     state: enabled
 - name: syncword_sym
@@ -147,7 +147,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1080, 8.0]
+    coordinate: [1136, 8.0]
     rotation: 0
     state: enabled
 - name: analog_agc_xx_0
@@ -177,7 +177,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: /home/chris/Code/noaa20_demodulate/out/modifiedmm.bin
+    file: /home/chris/Code/noaa20_demodulate/out/corr.bin
     type: byte
     unbuffered: 'False'
     vlen: '1'
@@ -199,7 +199,7 @@ blocks:
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
-    offset: '0'
+    offset: '2_000_000_000'
     repeat: 'False'
     type: short
     vlen: '1'
@@ -246,7 +246,7 @@ blocks:
     bus_structure: null
     coordinate: [752, 404.0]
     rotation: 0
-    state: disabled
+    state: enabled
 - name: blocks_throttle_0
   id: blocks_throttle
   parameters:
@@ -726,6 +726,21 @@ blocks:
     coordinate: [440, 492.0]
     rotation: 0
     state: enabled
+- name: snippet_0
+  id: snippet
+  parameters:
+    alias: ''
+    code: ''
+    comment: ''
+    priority: '0'
+    section: main_after_init
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [720, 692.0]
+    rotation: 0
+    state: true
 - name: virtual_sink_0
   id: virtual_sink
   parameters:
