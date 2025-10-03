@@ -2,3 +2,4 @@ __pycache__/*
 recordings/*
 out/*
 images/*
+noaa20_hrd_demodulate.py
